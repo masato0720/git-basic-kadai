@@ -1,0 +1,54 @@
+masato@LAPTOP-IAU855B2 MINGW64 ~/Desktop/samurai
+$ mkdir git_challenge
+
+masato@LAPTOP-IAU855B2 MINGW64 ~/Desktop/samurai
+$ cd git_challenge
+
+masato@LAPTOP-IAU855B2 MINGW64 ~/Desktop/samurai/git_challenge
+$ git init
+Initialized empty Git repository in C:/Users/masato/Desktop/samurai/git_challenge/.git/
+
+masato@LAPTOP-IAU855B2 MINGW64 ~/Desktop/samurai/git_challenge (main)
+$ echo "holle,world!" >> hello_world.txt
+
+masato@LAPTOP-IAU855B2 MINGW64 ~/Desktop/samurai/git_challenge (main)
+$ git add .
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+masato@LAPTOP-IAU855B2 MINGW64 ~/Desktop/samurai/git_challenge (main)
+$ git commit -m "hello_world.txtを追加"
+[main (root-commit) 9904a7e] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+masato@LAPTOP-IAU855B2 MINGW64 ~/Desktop/samurai/git_challenge (main)
+$ echo "こんちには、世界！" >> hello_world.txt
+
+masato@LAPTOP-IAU855B2 MINGW64 ~/Desktop/samurai/git_challenge (main)
+$ git add .
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+masato@LAPTOP-IAU855B2 MINGW64 ~/Desktop/samurai/git_challenge (main)
+$ git commit -m "日本語訳を追記"
+[main 62f758d] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+
+masato@LAPTOP-IAU855B2 MINGW64 ~/Desktop/samurai/git_challenge (main)
+$ git log --oneline
+62f758d (HEAD -> main) 日本語訳を追記
+9904a7e hello_world.txtを追加
+
+masato@LAPTOP-IAU855B2 MINGW64 ~/Desktop/samurai/git_challenge (main)
+$ history
+    1  git --version
+    2  mkdir git_challenge
+    3  cd git_challenge
+    4  git init
+    5  echo "holle,world!" >> hello_world.txt
+    6  git add .
+    7  git commit -m "hello_world.txtを追加"
+    8  echo "こんちには、世界！" >> hello_world.txt
+    9  git add .
+   10  git commit -m "日本語訳を追記"
+   11  git log --oneline
+   12  history
